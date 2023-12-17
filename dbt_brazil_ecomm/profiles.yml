@@ -1,0 +1,13 @@
+# profiles.yml
+
+dbt_brazil_ecomm:
+  target: dev_postgres
+  outputs:
+    dev_postgres:
+      type: postgres
+      host: localhost
+      port: 5432
+      user: postgres
+      password: postgres
+      dbname: raw
+      schema: brazil_ecomm

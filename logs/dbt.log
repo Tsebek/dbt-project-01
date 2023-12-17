@@ -1,0 +1,39 @@
+[0m21:05:11.511701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c9c1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1080dd430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108105ca0>]}
+
+
+============================== 21:05:11.520671 | b60ec9a2-a5e5-47c3-a831-7bfd4cbef4d2 ==============================
+[0m21:05:11.520671 [info ] [MainThread]: Running with dbt=1.7.2
+[0m21:05:11.521472 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/tsebek/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt init dbt-brazil-ecomm', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:05:32.235849 [debug] [MainThread]: Starter project path: /Users/tsebek/Documents/Git/02_dbt_core_snowflake/dbt-venv/lib/python3.9/site-packages/dbt/include/starter_project
+[0m21:05:32.261861 [info ] [MainThread]: 
+Your new dbt project "dbt_brazil_ecomm" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:05:32.262886 [info ] [MainThread]: Setting up your profile.
+[0m21:07:07.255369 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068307c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108cf02e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d33c70>]}
+
+
+============================== 21:07:07.268630 | 19a6d3df-77ae-475a-91f5-af246eac756b ==============================
+[0m21:07:07.268630 [info ] [MainThread]: Running with dbt=1.7.2
+[0m21:07:07.270294 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/Users/tsebek/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt build', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m21:07:07.271661 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/tsebek/Documents/Git/01_dbt_airflow/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m21:07:07.294670 [debug] [MainThread]: Resource report: {"command_name": "build", "command_wall_clock_time": 0.13560377, "process_user_time": 3.0769, "process_kernel_time": 0.441415, "process_mem_max_rss": "92532736", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m21:07:07.296468 [debug] [MainThread]: Command `dbt build` failed at 21:07:07.296045 after 0.14 seconds
+[0m21:07:07.297672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068307c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108cfc3a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d33250>]}
+[0m21:07:07.298887 [debug] [MainThread]: Flushing usage events

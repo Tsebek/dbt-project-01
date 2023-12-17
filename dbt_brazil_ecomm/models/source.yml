@@ -1,0 +1,17 @@
+# models/sources.yml
+
+version: 2
+
+sources:
+  - name: your_csv_source
+    database: raw
+    tables:
+      - name: file1
+        location: "{{ source('your_csv_source', 'csv_files/file1.csv') }}"
+        loaded_at_field: loaded_at
+
+      - name: file2
+        location: "{{ source('your_csv_source', 'csv_files/file2.csv') }}"
+        loaded_at_field: loaded_at
+
+      # Add configurations for other files...
